@@ -8,13 +8,14 @@ export interface PayosRequestPaymentPayload {
   orderCode: number;
   amount: number;
   description: string;
+  cancelUrl: string;
+  returnUrl: string;
   buyerName?: string;
   buyerEmail?: string;
   buyerPhone?: string;
   buyerAddress?: string;
   items?: PayosRequestPaymentItem[];
-  cancelUrl: string;
-  returnUrl: string;
   expiredAt?: number;
   signature: string;
+
 }
