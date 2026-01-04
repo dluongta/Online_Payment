@@ -9,7 +9,7 @@ async function bootstrap() {
 
   // Cho phép FE localhost truy cập
   app.enableCors({
-    origin: 'http://localhost:3000', // hoặc '*'
+    origin: 'http://localhost:3000',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
     allowedHeaders: '*',
   });
